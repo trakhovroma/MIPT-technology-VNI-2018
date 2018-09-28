@@ -31,7 +31,8 @@ jobs:
           name: run tests
           command: |
             . venv/bin/activate
+            jupyter nbconvert --execute hw1.ipynb
 
       - store_artifacts:
-          path: test-reports
-          destination: test-reports
+          path: html-report
+          destination: html-report
