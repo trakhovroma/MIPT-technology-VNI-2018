@@ -34,7 +34,7 @@ jobs:
             mkdir html-artifacte-report
             mv hw1.ipynb html-artifacte-report/hw1.ipynb
             cd html-artifacte-report
-            echo '123' > 
+            echo '123' > 1.txt
 
       - store_artifacts:
           path: html-artifacte-report
