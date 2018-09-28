@@ -7,6 +7,8 @@ chmod 777 bash.sh
 
 Homework 3:
 
+=for HTML <a href="https://circleci.com/gh/trakhovroma/MIPT-technology-VNI-2018"><img src="https://circleci.com/gh/trakhovroma/MIPT-technology-VNI-2018.svg?style=svg"></a>
+
 {<img src="https://circleci.com/gh/trakhovroma/MIPT-technology-VNI-2018.svg?style=svg" alt="CircleCI" />}[https://circleci.com/gh/trakhovroma/MIPT-technology-VNI-2018]
 
 [![CircleCI](https://circleci.com/gh/trakhovroma/MIPT-technology-VNI-2018.svg?style=svg)](https://circleci.com/gh/trakhovroma/MIPT-technology-VNI-2018)
