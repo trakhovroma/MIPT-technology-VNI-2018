@@ -3,7 +3,7 @@ version: 2
 jobs:
   build:
     docker:
-      - image: circleci/python:3.6.1
+      - image: conda/miniconda3
 
     working_directory: ~/repo
 
@@ -32,9 +32,8 @@ jobs:
           command: |
             . venv/bin/activate
             mkdir html-artifacte-report
-            mv hw1.ipynb html-artifacte-report/hw1.ipynb
-            cd html-artifacte-report
             jupyter nbconvert --execute hw1.ipynb
+            mv hw1.html html-artifacte-report/hw1.html
 
       - store_artifacts:
           path: html-artifacte-report
