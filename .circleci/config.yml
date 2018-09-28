@@ -15,13 +15,6 @@ jobs:
           - v1-dependencies-{{ checksum "requirements.txt" }}
           - v1-dependencies-
 
-      - run:
-          name: install dependencies
-          command: |
-            python3 -m venv venv
-            . venv/bin/activate
-            pip install -r requirements.txt
-
       - save_cache:
           paths:
             - ./venv
@@ -30,7 +23,6 @@ jobs:
       - run:
           name: run tests
           command: |
-            . venv/bin/activate
             mkdir html-artifacte-report
             jupyter nbconvert --execute hw1.ipynb
             mv hw1.html html-artifacte-report/hw1.html
