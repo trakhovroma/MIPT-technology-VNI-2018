@@ -1,7 +1,6 @@
 name: test-env
 
 dependencies:
-  - python=3.6.1
   - numpy
   - toolz
   - matplotlib
