@@ -12,4 +12,4 @@ chmod 777 bash.sh
 ### Homework 4:
 
 ##### from requirements.txt: [![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/trakhovroma/MIPT-technology-VNI-2018/master?filepath=hw1.ipynb)
-##### from Dockerfile [![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/trakhovroma/MIPT-technology-VNI-2018/branch_dockerfile?filepath=hw1.ipynb)
+##### from Dockerfile: [![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/trakhovroma/MIPT-technology-VNI-2018/branch_dockerfile?filepath=hw1.ipynb)
