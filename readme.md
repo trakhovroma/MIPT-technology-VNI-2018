@@ -1,9 +1,9 @@
 ### Homework 2:
 
-git clone https://github.com/trakhovroma/MIPT-technology-VNI-2018
-cd MIPT-technology-VNI-2018
-chmod 777 bash.sh
-./bash
+###### git clone https://github.com/trakhovroma/MIPT-technology-VNI-2018
+###### cd MIPT-technology-VNI-2018
+###### chmod 777 bash.sh
+###### ./bash
 
 ### Homework 3:
 ##### circle ci badge
