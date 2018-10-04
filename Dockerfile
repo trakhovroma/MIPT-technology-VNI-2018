@@ -13,3 +13,8 @@ RUN adduser --disabled-password \
     --uid ${NB_UID} \
     ${NB_USER}
 WORKDIR ${HOME}
+ADD hw1.ipynb hw1.ipynb
+#RUN python3 -m venv venv
+#RUN . venv/bin/activate
+#ADD requirements.txt /tmp/requirements.txt
+#RUN pip install -r /tmp/requirements.txt
