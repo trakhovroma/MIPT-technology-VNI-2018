@@ -30,11 +30,10 @@ jobs:
           name: download_data_and_submit_to_kaggle
           command: |
             . venv/bin/activate
-cd ~/
 pip install kaggle
-mkdir .kaggle
-            cd .kaggle
-            echo $kaggle_api > kaggle.json
+mkdir /.kaggle
+cd .kaggle
+echo $kaggle_api > kaggle.json
 kaggle competitions download titanic
-            jupyter nbconvert --execute hw2.ipynb
-            kaggle competitions submit titanic -f titanic.csv -m "submission_from_circle_ci"
+jupyter nbconvert --execute hw2.ipynb
+kaggle competitions submit titanic -f titanic.csv -m "submission_from_circle_ci"
