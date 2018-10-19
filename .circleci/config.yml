@@ -38,7 +38,3 @@ jobs:
 	     kaggle competitions download titanic
             jupyter nbconvert --execute hw2.ipynb
             kaggle competitions submit titanic -f titanic.csv -m "submission_from_circle_ci"
-
-      - store_artifacts:
-          path: html-artifacte-report
-          destination: html-artifacte-report
