@@ -29,8 +29,9 @@ jobs:
       - run:
           name: download_data_and_submit_to_kaggle
           command: |
+            . venv/bin/activate      
             pip install kaggle
-            sudo mkdir /.kaggle
+            sudo mkdir ~/.kaggle
             echo $kaggle_api > /.kaggle/kaggle.json
             kaggle competitions download titanic
             jupyter nbconvert --execute titanic.ipynb
