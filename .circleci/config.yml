@@ -32,7 +32,7 @@ jobs:
             . venv/bin/activate      
             pip install kaggle
             sudo mkdir ~/.kaggle
-            echo $kaggle_api > /.kaggle/kaggle.json
+            echo $kaggle_api > ~/.kaggle/kaggle.json
             kaggle competitions download titanic
             jupyter nbconvert --execute titanic.ipynb
             kaggle competitions submit -f titanic.csv -m "submission_from_circle_ci"
