@@ -31,8 +31,8 @@ jobs:
           command: |
             . venv/bin/activate
             pip install kaggle
-            mkdir /.kaggle
-            cd .kaggle
+            sudo mkdir /.kaggle
+            cd /.kaggle
             echo $kaggle_api > kaggle.json
             kaggle competitions download titanic
             jupyter nbconvert --execute titanic.ipynb
